@@ -2917,6 +2917,13 @@
             },
         },
         {
+            name: "NOR - Noir (ZCore Wallet)",
+            onSelect: function() {
+                network = libs.bitcoin.networks.noir;
+                setHdCoin(119);
+            },
+        },
+        {
             name: "NLG - Gulden",
             onSelect: function() {
                 network = libs.bitcoin.networks.gulden;
