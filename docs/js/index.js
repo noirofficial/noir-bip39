@@ -6,7 +6,7 @@
     var seed = null;
     var bip32RootKey = null;
     var bip32ExtendedKey = null;
-    var network = libs.bitcoin.networks.bitcoin;
+    var network = libs.bitcoin.networks.noir;
     var addressRowTemplate = $("#address-row-template");
 
     var showIndex = true;
@@ -832,7 +832,7 @@
     function getDerivationPath() {
         if (bip44TabSelected()) {
             var purpose = parseIntNoNaN(DOM.bip44purpose.val(), 44);
-            var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+            var coin = parseIntNoNaN(DOM.bip44coin.val(), 119);
             var account = parseIntNoNaN(DOM.bip44account.val(), 0);
             var change = parseIntNoNaN(DOM.bip44change.val(), 0);
             var path = "m/";
@@ -950,7 +950,7 @@
     function displayBip44Info() {
         // Get the derivation path for the account
         var purpose = parseIntNoNaN(DOM.bip44purpose.val(), 44);
-        var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+        var coin = parseIntNoNaN(DOM.bip44coin.val(), 119);
         var account = parseIntNoNaN(DOM.bip44account.val(), 0);
         var path = "m/";
         path += purpose + "'/";
@@ -1494,7 +1494,7 @@
             var option = $("<option>");
             option.attr("value", i);
             option.text(network.name);
-            if (network.name == "BTC - Bitcoin") {
+            if (network.name == "NOR - Noir (ZCore Wallet)") {
                 option.prop("selected", true);
             }
             DOM.phraseNetwork.append(option);
