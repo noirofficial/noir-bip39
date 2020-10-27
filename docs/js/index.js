@@ -6,7 +6,7 @@
     var seed = null;
     var bip32RootKey = null;
     var bip32ExtendedKey = null;
-    var network = libs.bitcoin.networks.bitcoin;
+    var network = libs.bitcoin.networks.noir;
     var addressRowTemplate = $("#address-row-template");
 
     var showIndex = true;
