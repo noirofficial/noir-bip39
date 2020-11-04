@@ -4,12 +4,12 @@ A tool for converting BIP39 mnemonic phrases to addresses and private keys.
 
 ## Online Version
 
-https://iancoleman.io/bip39/
+https://noirofficial.github.io/noir-bip39/
 
 ## Standalone offline version
 
 Download `bip39-standalone.html` from
-[the releases](https://github.com/iancoleman/bip39/releases).
+[the releases](https://github.com/noirofficial/noir-bip39/releases).
 
 Open the file in a browser by double clicking it.
 
